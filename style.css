@@ -170,83 +170,6 @@ nav .fa{
 
 
 /*----------- blurb ----- */
-/*
-.blurb{
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    text-align: center;
-    padding-top: 7%;
-    padding-bottom: 5%;
-    background-image: url(background_blub.png);
-    border-spacing: 100px;
-}
-h1{
-    font-size: 46px;
-    font-weight: 600;
-    transform: translate(-5,-5%);
-}
-
-p{
-    font-size: 22px;
-    line-height: 22px;
-    padding: 1px;
-}
-.row{
-    margin-top: 10%;
-    display: flex;
-    justify-content: space-between;
-}
-.blurb-text-col{
-    padding-top: 7%;
-    padding-left: 5%;
-    width: 90%;
-    text-align: center;
-    column-gap: 5px;
-    justify-content: space-between;
-}
-.left-text{
-    float: left;
-    width: 25%;
-}
-.middle-text{
-    float: left;
-    width: 50%;
-}
-.right-text{
-    float: right;
-    width: 25%;
-}
-
-.blurb-col{
-    flex-basis: 25%;
-    background-size: 100% 100%;
-    border-radius: 10px;
-    column-gap: 10px;
-    margin-bottom: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 0px 0px;
-    transition: 0.5s;   
-}
-.blurb-col img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-.blurb-col:hover{
-    box-shadow: 0 0 10px 0px rgba(0,0,0,0.6);
-}
-h3{
-    text-align: center;
-    margin: 1px 0;
-}
-@media(max-width: 700px){
-    .row{
-        flex-direction:column;
-    }
-}
-*/
 
 .item{
     width: 100%;
@@ -331,7 +254,7 @@ p{
 .reviews-col{
     flex-basis: 10%;
     border-radius: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     text-align: center;
     color: #FCEFE3;
     padding: 20px 20px; 
