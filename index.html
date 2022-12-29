@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+    <section class ="banner">
+        <nav>
+            <a href="index.html"><img src="caliwaves_banner.png" 
+                width="auto"
+                height="auto"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Store</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    </section>
+    <section class="header">
+        <div class="text-box">
+            <h1 style="color:#FCEFE3">CALIWAVES hair accesories! </h1>
+            <p style="color:#FCEFE3">Hair accessories for any occasion,<br> from everyday to the BIG day
+            </p>
+            <a href="" class="hero-btn">Visit the store now!</a>
+        </div>
+
+    </section>
+
+   
+<!--------What we do --------> 
+
+<section class="item">
+    <h1 style="color:#1a6252">What amazing items have we got to offer?</h1>
+    <br>
+    <h2 style="color:#1a6252">We have tons of hair accessories that anyone and their mother would love!</h2>
+    
+    <div class="row">
+        <div class="item-col">
+        <h1 style="color:#1a6252">
+            <b>Scrunchies</b>
+            <br>
+        </h1>
+            <img src="home_pics/scruncy_button.png">
+        </div>
+        <div class="item-col">
+        <h1 style="color:#1a6252">
+            <b>Hair clips</b>
+            <br>
+        </h1>
+            <img src="home_pics/hair_clip_button.png">
+
+        </div>
+        <div class="item-col">
+        <h1 style="color:#1a6252">
+            <b>Combs</b>
+            <br>
+        </h1>
+            <img src="home_pics/comb_button.png">
+        </div>
+
+    </div>
+    
+</section>
+<!------- reviews! -------->
+
+<section class="reviews">
+    <h1 style="color:#FCEFE3"><br>Don't take our word for it... <br>take a look at some of our reviews</h1>
+    <div class="row">
+        <div class="reviews-col">
+            <img src="review_pics/caroline_scruncies.png" width="auto" height="300">
+            <h3><u>Caroline</u>, Dec 2022</h3>
+            <img src="review_pics/five_star.png" width="auto" height="30">
+            <p>'Lovely high quality scrunchies. I know my friend will love them :) xx'</p>
+        </div>
+        <div class="reviews-col">
+            <img src="review_pics/lyndsay_pillowcase.png" width="auto" height="300">
+            <h3><u>Lyndsay</u>, Aug 2022</h3>
+            <img src="review_pics/five_star.png" width="auto" height="30">
+            <p>'Delivered on time & exactly as described'</p>
+        </div>
+        <div class="reviews-col">
+            <img src="review_pics/alice_comb.png" width="auto" height="300">
+            <h3><u>Alice</u>, Jan 2022</h3>
+            <img src="review_pics/five_star.png" width="auto" height="30">
+            <p>'Gorgeous xxx part of a gift for my mum - I know she'll love it.'</p>
+        </div>
+        <div class="reviews-col">
+            <img src="review_pics/jody_hairclips.png" width="auto" height="300">
+            <h3><u>Jody</u>, Nov 2021</h3>
+            <img src="review_pics/five_star.png" width="auto" height="30">
+            <p>'These are beautiful little hair clips.'</p>
+        </div>
+        <div class="reviews-col">
+            <img src="review_pics/amy_bow.png" width="auto" height="300">
+            <h3><u>Amy</u>, Oct 2021</h3>
+            <img src="review_pics/five_star.png" width="auto" height="30">
+            <p>'Quality item, as described. Can't wait to wear it for our hen party!'</p>
+        </div>
+    </div>
+</section>
+
+<!--------JavaScript for Toggle Menu -------->
+    <script>
+        var navlinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+  </body>
+</html>

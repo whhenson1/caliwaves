@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+.banner{
+    min-height: 10%;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index:3;
+    border: 1px solid #1a6252;
+  }
+  nav {
+    height: 80px;
+    background: #FCEFE3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+
+  }
+  nav img{
+    width: 50%;
+  }
+  .nav-links{
+  flex: 1;
+  text-align: right;
+  }
+.nav-links ul li{
+list-style: none;
+display: inline-block;
+padding: 8px 50px;
+position: sticky;
+top: 0;
+}
+.nav-links ul li a{
+    color: #1a6252;
+    text-decoration: none;
+    font-size: 30px;
+    flex: 1;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #1a6252;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(1, 10, 1, 0.5),rgba(1, 10, 1, 0.5)),url(home_pics/background.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.reviews{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    border-spacing: 100px;
+    background-image: linear-gradient(rgba(1, 10, 1, 0.5),rgba(1, 10, 1, 0.5)),url(home_pics/background_2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.text-box{
+    width: 90%;
+    color: #FCEFE3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 28px;
+
+}
+.hero-btn{
+    display: inline-0block;
+    text-decoration: none;
+    color: #1a6252;
+    border: 1px solid #1a6252;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: #FCEFE3;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #fff;
+    background: #1a6252;
+    transition: 1s;
+    color: #FCEFE3
+}
+
+.hero-btn:hover::after{
+    border: 1px solid #1a6252;
+    background: #FCEFE3;
+    color: #000000
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .banner{
+        min-height: 10%;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index:3;
+        border: 1px solid #1a6252;
+      }
+    .header{
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(home_pics/background.jpeg)
+      }
+    .text-box h1{
+        font-size: 20px;
+    }
+    .text-box p{
+        font-size: 14px
+    }
+
+
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position:absolute;
+        background: #FCEFE3;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s
+
+    }
+    nav .fa{
+        display: block;
+        color: #000000;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+
+/*----------- blurb ----- */
+/*
+.blurb{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 5%;
+    background-image: url(background_blub.png);
+    border-spacing: 100px;
+}
+h1{
+    font-size: 46px;
+    font-weight: 600;
+    transform: translate(-5,-5%);
+}
+
+p{
+    font-size: 22px;
+    line-height: 22px;
+    padding: 1px;
+}
+.row{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.blurb-text-col{
+    padding-top: 7%;
+    padding-left: 5%;
+    width: 90%;
+    text-align: center;
+    column-gap: 5px;
+    justify-content: space-between;
+}
+.left-text{
+    float: left;
+    width: 25%;
+}
+.middle-text{
+    float: left;
+    width: 50%;
+}
+.right-text{
+    float: right;
+    width: 25%;
+}
+
+.blurb-col{
+    flex-basis: 25%;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    column-gap: 10px;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0px 0px;
+    transition: 0.5s;   
+}
+.blurb-col img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.blurb-col:hover{
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.6);
+}
+h3{
+    text-align: center;
+    margin: 1px 0;
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction:column;
+    }
+}
+*/
+
+.item{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 5%;
+    background-image: url(home_pics/background_blub.png);
+    border-spacing: 100px;
+}
+.item-col img{
+    flex-basis: 15%;
+    width: 75%;
+    height: 75%;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    column-gap: 10px;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0px 0px;
+    transition: 0.5s;   
+}
+h1{
+    font-size: 46px;
+    font-weight: 600;
+    transform: translate(-5,-5%);
+}
+
+p{
+    font-size: 22px;
+    line-height: 22px;
+    padding: 1px;
+}
+.row{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-col img:hover{
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.6);
+}
+
+@media(max-width: 700px){
+    .row{
+        min-height: 100vh;
+        width: 100%;
+        flex-direction:column;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 14px;
+    }
+    .item-col img{
+        width: 65%;
+        height: 65%;
+    }
+    
+    }
+
+/*----------- REVIEWS ----- */
+
+.reviews{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    border-spacing: 100px;
+    background-image: linear-gradient(rgba(1, 10, 1, 0.5),rgba(1, 10, 1, 0.5)),url(home_pics/background_2.png);
+    background-position: center;
+    background-size: cover;
+}
+.reviews-col img{
+    flex-basis: 100%;
+    border-radius: 10px;
+}
+.reviews-col{
+    flex-basis: 10%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+    color: #FCEFE3;
+    padding: 20px 20px; 
+}
+p{
+    color: #FCEFE3; 
+    font-size: 14px;
+}
+
+@media(max-width: 700px){
+    .reviews{
+        min-height: 100vh;
+        width: 100%;
+        flex-direction:column;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 14px;
+    }
+    
+    }
